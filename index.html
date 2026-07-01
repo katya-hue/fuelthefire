@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fuel the Fire — Growth Marketing for GLP-1, Longevity & Wellness Brands</title>
-  <meta name="description" content="Fuel the Fire is a growth marketing consultancy for GLP-1, peptide, longevity, and wellness brands — combining provider network access, marketing and sales enablement, events, and AI-powered strategy.">
+  <title>Fuel the Fire — Growth Marketing for GLP-1s, Longevity & Wellness Brands</title>
+  <meta name="description" content="Fuel the Fire is a growth marketing consultancy for GLP-1s, peptide, longevity, and wellness brands — combining provider network access, marketing and sales enablement, events, and AI-powered strategy.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +35,8 @@
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
+
+    .nowrap { white-space: nowrap; }
 
     .wrap { max-width: var(--w-text); margin: 0 auto; padding: 0 32px; }
     .wrap.wide { max-width: var(--w-wide); }
@@ -130,28 +132,17 @@
       pointer-events: none;
     }
 
-    .hero-kicker {
-      position: relative;
-      z-index: 1;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 24px;
-    }
-
     .hero-headline {
       position: relative;
       z-index: 1;
       font-family: 'Cormorant Garamond', serif;
       font-weight: 300;
-      font-size: clamp(48px, 7.6vw, 88px);
-      line-height: 1.06;
+      font-size: clamp(42px, 6.2vw, 82px);
+      line-height: 1.08;
       letter-spacing: -0.01em;
       color: var(--dark);
       margin-bottom: 24px;
-      max-width: 950px;
+      max-width: 980px;
     }
 
     .hero-subline {
@@ -219,10 +210,7 @@
       transform: translateX(4px);
     }
 
-    .pillar:hover .pillar-icon svg {
-      stroke: var(--wine);
-      transition: stroke 0.3s;
-    }
+    .pillar:hover .pillar-icon svg { stroke: var(--wine); }
 
     .pillar-icon {
       flex-shrink: 0;
@@ -359,10 +347,21 @@
       color: var(--muted);
     }
 
+    @media (max-width: 900px) {
+      .hero-headline {
+        font-size: clamp(44px, 8vw, 68px);
+        max-width: 760px;
+      }
+    }
+
     @media (max-width: 640px) {
       .wordmark { padding-top: 36px; }
       .hero { min-height: 80vh; padding: 60px 20px 72px; }
       .hero::before { width: 310px; height: 310px; }
+      .hero-headline {
+        font-size: clamp(38px, 11vw, 58px);
+        line-height: 1.08;
+      }
       section { padding: 72px 20px; }
       .label { margin-bottom: 40px; }
       .pillar { padding: 28px 20px; gap: 16px; }
@@ -383,10 +382,8 @@
   <div class="wordmark">Fuel the Fire</div>
 
   <section class="hero bg-cream">
-    <div class="hero-kicker">Fuel the Fire</div>
-
     <h1 class="hero-headline">
-      Growth marketing for GLP-1, longevity &amp; wellness brands.
+      Growth marketing for <span class="nowrap">GLP-1s</span>, longevity &amp; wellness brands.
     </h1>
 
     <div class="hero-subline">
@@ -397,7 +394,7 @@
 
     <p class="hero-descriptor">
       Fuel the Fire is a growth marketing consultancy for
-      <strong>GLP-1, peptide, longevity, and metabolic health brands</strong> —
+      <strong>GLP-1s, peptide, longevity, and metabolic health brands</strong> —
       combining an active provider network, marketing and sales enablement,
       events, and AI-powered strategy to drive revenue expansion and sustainable growth.
     </p>
@@ -565,7 +562,7 @@
       <div class="label">Stay Connected</div>
 
       <p class="body-text" style="max-width:640px;margin-bottom:42px;">
-        Fuel the Fire is our consulting practice. Wellness Growth Lab is where we publish insights on growth marketing, AI, GLP-1, longevity, and the business of modern wellness.
+        Fuel the Fire is our consulting practice. Wellness Growth Lab is where we publish insights on growth marketing, AI, GLP-1s, longevity, and the business of modern wellness.
       </p>
 
       <div class="link-row">
@@ -586,7 +583,7 @@
 
   <footer>
     <div class="footer-inner">
-      <div class="footer-copy">© 2026 Fuel the Fire LLC</div>
+      <div class="footer-copy">© 2025 Fuel the Fire LLC</div>
     </div>
   </footer>
 
